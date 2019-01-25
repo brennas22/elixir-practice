@@ -19,13 +19,22 @@ defmodule Practice.PracticeTest do
 
   test "evaluate some expressions" do
     assert calc("5") == 5
-    assert calc("5 + 1") == 6
-    assert calc("5 * 3") == 15
-    assert calc("10 / 2") == 5
-    assert calc("10 - 2") == 8
+
+
     assert calc("5 * 3 + 8") == 23
+    assert calc("10 / 2") == 5
+    assert calc("5 * 3") == 15
+
+
     assert calc("8 + 5 * 3") == 23
+    assert calc("5 + 1") == 6
+
+    assert calc("10 - 2") == 8
   end
 
   # TODO: Add two unit tests for palindrome.
+  test "determine some palindromes" do
+    assert palindrome("hannah") == "is a palindrome"
+    assert palindrome("hello") == "is not a palindrome"
+  end
 end
